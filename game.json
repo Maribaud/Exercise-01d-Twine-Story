@@ -1,164 +1,252 @@
 {
-    "passages": [
-      {
-        "text": "You are standing at the end of a road before a small brick building. Around you is a forest.  A small stream flows out of the building and down a gully.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Road",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+  "passages": [
+    {
+      "text": "Get to the end of the map to claim your reward!\n\n[[Play-> First encounter]]\n",
+      "links": [
+        {
+          "name": "Play",
+          "link": " First encounter",
+          "pid": "2"
         }
-      },
-      {
-        "text": "You are in open forest, with a deep valley to one side.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Road]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Forest",
-        "pid": "2",
-        "position": {
-          "x": "187",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are inside a building, a well house for a large spring.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Road]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Road",
-            "pid": "1"
-          }
-        ],
-        "name": "Building",
-        "pid": "3",
-        "position": {
-          "x": "337",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are in a valley in the forest beside a stream tumbling along a rocky bed.\n\n[[Go North->Road]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Valley",
-        "pid": "4",
-        "position": {
-          "x": "487",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You have walked up a hill, still in the forest.  The road slopes back\ndown the other side of the hill.  There is a building in the distance.\n\n[[Go North->Forest]]\n[[Go East->Road]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Hill",
-        "pid": "5",
-        "position": {
-          "x": "637",
-          "y": "339"
-        }
+      ],
+      "name": "Level Start",
+      "pid": "1",
+      "position": {
+        "x": "346",
+        "y": "0"
       }
-    ],
-    "name": "Adventure",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.3.7",
-    "ifid": "1A8FFB75-8072-4382-BCAF-ADFA65B09385"
-  }
+    },
+    {
+      "text": "Your first enemy is barreling towards you with great speed, how do you fight it?\n\n[[Go Over->Jump]]\n[[Double Down->Go Faster]]",
+      "links": [
+        {
+          "name": "Go Over",
+          "link": "Jump",
+          "pid": "3"
+        },
+        {
+          "name": "Double Down",
+          "link": "Go Faster",
+          "pid": "4"
+        }
+      ],
+      "name": " First encounter",
+      "pid": "2",
+      "position": {
+        "x": "301",
+        "y": "184"
+      }
+    },
+    {
+      "text": "You've made it past the first foe! Above you is a set of blocks, choose wisely... \n\n\n[[Left-> ?]]\n[[Right-> ??]]\n[[Center-> ???]]",
+      "links": [
+        {
+          "name": "Left",
+          "link": " ?",
+          "pid": "5"
+        },
+        {
+          "name": "Right",
+          "link": " ??",
+          "pid": "6"
+        },
+        {
+          "name": "Center",
+          "link": " ???",
+          "pid": "7"
+        }
+      ],
+      "name": "Jump",
+      "pid": "3",
+      "position": {
+        "x": "306",
+        "y": "369"
+      }
+    },
+    {
+      "text": "The enemy won, try something else and restart.\n\n[[Go Back->Level Start]]",
+      "links": [
+        {
+          "name": "Go Back",
+          "link": "Level Start",
+          "pid": "1"
+        }
+      ],
+      "name": "Go Faster",
+      "pid": "4",
+      "position": {
+        "x": "72",
+        "y": "166"
+      }
+    },
+    {
+      "text": "A Coin! With this you can do nothing! With your new found wisdom of currencey, you look to battle more foes. And one approaches from the top of a small hill, what will you do?\n\n[[Wait and jump-> Wait]] \n[[Go for it-> It]]",
+      "links": [
+        {
+          "name": "Wait and jump",
+          "link": " Wait",
+          "pid": "8"
+        },
+        {
+          "name": "Go for it",
+          "link": " It",
+          "pid": "9"
+        }
+      ],
+      "name": " ?",
+      "pid": "5",
+      "position": {
+        "x": "703",
+        "y": "391"
+      }
+    },
+    {
+      "text": "A Coin! With this you can do nothing! With your new found wisdom of currencey, you look to battle more foes. And one approaches from the top of a small hill, what will you do?\n\n[[Wait and jump-> Wait]] \n[[Go for it-> It]]\n",
+      "links": [
+        {
+          "name": "Wait and jump",
+          "link": " Wait",
+          "pid": "8"
+        },
+        {
+          "name": "Go for it",
+          "link": " It",
+          "pid": "9"
+        }
+      ],
+      "name": " ??",
+      "pid": "6",
+      "position": {
+        "x": "473",
+        "y": "550"
+      }
+    },
+    {
+      "text": "A Coin! With this you can do nothing! With your new found wisdom of currencey, you look to battle more foes. And one approaches from the top of a small hill, what will you do?\n\n[[Wait and jump-> Wait]] \n[[Go for it-> It]]",
+      "links": [
+        {
+          "name": "Wait and jump",
+          "link": " Wait",
+          "pid": "8"
+        },
+        {
+          "name": "Go for it",
+          "link": " It",
+          "pid": "9"
+        }
+      ],
+      "name": " ???",
+      "pid": "7",
+      "position": {
+        "x": "72",
+        "y": "387"
+      }
+    },
+    {
+      "text": "*Bloop* you evade the enemies attack, climb the hill and see what is in store for you next...\n\n[[Climb->Hill]]",
+      "links": [
+        {
+          "name": "Climb",
+          "link": "Hill",
+          "pid": "10"
+        }
+      ],
+      "name": " Wait",
+      "pid": "8",
+      "position": {
+        "x": "220",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Didn't you know the high ground always wins? Anyways restart and try again, maybe you'll find something else in the block this time...\n\n[[Restart->Level Start]] \n",
+      "links": [
+        {
+          "name": "Restart",
+          "link": "Level Start",
+          "pid": "1"
+        }
+      ],
+      "name": " It",
+      "pid": "9",
+      "position": {
+        "x": "559",
+        "y": "123"
+      }
+    },
+    {
+      "text": "As you reach the top of the hill, you see what looks like a castle and flag pole, guarded by a trio of enemies. You also find a set of blocks you can use as a bridge. How will you escape the level?\n\n[[Risk it-> Bridge]] \n[[Try your luck-> Enemies]]\n\n",
+      "links": [
+        {
+          "name": "Risk it",
+          "link": " Bridge",
+          "pid": "11"
+        },
+        {
+          "name": "Try your luck",
+          "link": " Enemies",
+          "pid": "12"
+        }
+      ],
+      "name": "Hill",
+      "pid": "10",
+      "position": {
+        "x": "220",
+        "y": "756"
+      }
+    },
+    {
+      "text": "You miss the final jump to the flag, so close...\n\n[[Restart->Level Start]] ",
+      "links": [
+        {
+          "name": "Restart",
+          "link": "Level Start",
+          "pid": "1"
+        }
+      ],
+      "name": " Bridge",
+      "pid": "11",
+      "position": {
+        "x": "52",
+        "y": "865"
+      }
+    },
+    {
+      "text": "Jump Jump Jump. You make it over the three enmemies in one fell swoop, go for the Goal!\n\n[[Goal->!!!]]",
+      "links": [
+        {
+          "name": "Goal",
+          "link": "!!!",
+          "pid": "13"
+        }
+      ],
+      "name": " Enemies",
+      "pid": "12",
+      "position": {
+        "x": "403",
+        "y": "851"
+      }
+    },
+    {
+      "text": "CONGRATS!! You've beaten the game! Want to try again? Maybe the blocks have something else in store for you...\n\n[[Restart->Level Start]] ",
+      "links": [
+        {
+          "name": "Restart",
+          "link": "Level Start",
+          "pid": "1"
+        }
+      ],
+      "name": "!!!",
+      "pid": "13",
+      "position": {
+        "x": "650",
+        "y": "856"
+      }
+    }
+  ],
+  "name": "2-D Platformer",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.9",
+  "ifid": "6EFB9FF7-9D77-4832-B15D-FCA6926DED73"
+}
